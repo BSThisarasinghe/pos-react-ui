@@ -1,0 +1,52 @@
+/*Top nav*/
+
+.navbar {
+    &.topNav {
+        position: relative;
+        display: flex;
+        padding: 10px;
+        border-bottom: solid 1px $line-grey;
+        justify-content: space-between;
+
+        .nav-top-title__wrapper {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            h4 {
+                margin: 0;
+                &.nav-title {
+                    font-size: $title-20;
+                    font-weight: $semibold-font;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+        .nav-top-element__wrapper{
+            display: flex;
+            justify-content: space-between;
+            z-index: 99;
+            position: relative;
+            width: 100%;
+            .btn-primary {
+                min-width: 90px;
+            }
+            &.single-btn-right{
+                justify-content: end;
+            }
+        }
+
+    }
+
+    img {
+        max-height: 35px;
+    }
+}
+
+/* /END Top nav*/

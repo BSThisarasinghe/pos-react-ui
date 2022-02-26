@@ -1,0 +1,75 @@
+/*settings*/
+.inner-page__wrapper {
+    padding: 20px 15px;
+
+    &.main-setting__wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .left-controller__wrapper {
+        width: 375px;
+
+        .left-tab {
+            border: solid 1px $line-grey;
+            border-radius: 8px;
+
+            &.fixed-size {
+                height: calc(100vh - 153px);
+                max-height: calc(100vh - 153px);
+            }
+        }
+    }
+
+    .right-content__wrapper {
+        padding: 15px 30px;
+        width: calc( 619px - 60px);
+        height: calc(100vh - 153px - 30px);
+        max-height: calc(100vh - 153px - 30px);
+        .right-content__inner{
+            overflow-y: auto;
+        }
+    }
+}
+
+.left-tab-content {
+    overflow-y: auto;
+    ul {
+        margin-block-start: 0px;
+        margin-block-end: 25px;
+
+        &.nav-tab {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                &.nav-tab-item {
+                    // padding: 20px 17px;
+                    position: relative;
+                    &:not(:last-child) {
+                        border-bottom: solid 1px $line-grey;
+                    }
+
+                    .tab-link {
+                        height: 55px;
+                        padding: 0 20px 0 20px;
+                        display: flex;
+                        align-items: center;
+
+                        font-size: $body-16;
+                        color: $black;
+
+                        &:hover,:focus{
+                            background-color: change-color($primary, $alpha: 0.15);
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*/ settings*/

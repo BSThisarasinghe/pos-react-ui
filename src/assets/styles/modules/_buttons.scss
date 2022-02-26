@@ -1,0 +1,378 @@
+/*Buttons styles*/
+
+.btn {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: $semibold-font;
+    line-height: 1.2;
+    color: $black;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.625rem 0.95rem;
+    font-size: $body-16;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+    &.btn-primary {
+        color: $white;
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover,
+        :focus {
+            color: $white;
+            background-color: $primary-darker;
+            border-color: $primary-darker;
+            -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+        }
+
+
+    }
+
+    &.btn-green {
+        color: $white;
+        background-color: $green;
+        border-color: $green;
+
+        &:hover,
+        :focus {
+            color: $white;
+            background-color: $green-darker;
+            border-color: $green-darker;
+
+        }
+    }
+
+    &.btn-grey {
+        color: $white;
+        background-color: $grey-500;
+        border-color: $grey-500;
+
+
+        &:hover,
+        :focus {
+            color: $white;
+            background-color: $primary-purple;
+            border-color: $primary-purple;
+        }
+        &.active{
+            color: $white;
+            background-color: $primary-purple;
+            border-color: $primary-purple;
+        }
+    }
+
+    &.btn-function {
+        color: $black;
+        background-color: $line-grey;
+        border-color: $line-grey;
+        font-weight: $semibold-font;
+        font-size: $body-16;
+
+        &.stack {
+            color: $white;
+            background-color: $black;
+            border-color: $black;
+
+        }
+
+        &.darker {
+            color: $white;
+            background-color: $grey-500;
+            border-color: $grey-500;
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: $grey-700;
+                border-color: $grey-700;
+                -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+
+            }
+        }
+
+        &.red {
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: $red;
+                border-color: $red;
+                -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+
+            }
+        }
+
+        &.yellow {
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: $yellow;
+                border-color: $yellow;
+                -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+
+            }
+        }
+
+
+    }
+
+    &.btn-lg {
+        padding: 0.873rem 1.95rem;
+        font-size: $title-21;
+
+        &.btn-control {
+            padding: 0.718rem 1.95rem !important;
+            background-color: $grey-500;
+            color: $white;
+            font-size: $title-21;
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: $grey-700;
+                border-color: $grey-700;
+                -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+
+            }
+
+            &:disabled {
+                color: $grey-500;
+                background-color: $light-grey;
+                border-color: $light-grey;
+
+                &:hover,
+                :focus {
+                    color: $grey-500;
+                    background-color: $light-grey;
+                    border-color: $light-grey;
+                    -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+
+                }
+            }
+        }
+    }
+
+    &.btn-control {
+        font-size: $body-16;
+        background-color: $light-grey;
+        border: solid 1px $line-grey;
+    }
+
+    &.btn-key-function {
+        max-width: 90px;
+        font-size: 36px;
+        border-radius: 8px;
+        border: solid 1.8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.primary-blue {
+            border-color: $primary;
+            background-color: change-color($primary, $alpha: 0.15);
+
+            svg {
+                fill: $primary;
+            }
+
+            &.btn-done {
+
+                &:hover,
+                :focus {
+                    color: $white;
+                    background-color: change-color($primary, $alpha: 1.0);
+                    border-color: $primary;
+
+                    svg {
+                        fill: $white;
+                    }
+                }
+            }
+
+            &.btn-backspace {
+
+                &:hover,
+                :focus {
+                    color: $red;
+                    background-color: change-color($red, $alpha: 1.0);
+                    border-color: $red;
+
+                    svg {
+                        fill: $white;
+                    }
+                }
+            }
+
+        }
+
+        &.yellow {
+            color: $yellow;
+            border-color: $yellow;
+            background-color: change-color($yellow, $alpha: 0.15);
+
+            svg {
+                fill: $yellow;
+            }
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($yellow, $alpha: 1.0);
+                border-color: $yellow;
+
+                svg {
+                    fill: $white;
+                }
+            }
+
+        }
+
+        &.green {
+            border-color: $green;
+            color: $green;
+            background-color: change-color($green, $alpha: 0.15);
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($green, $alpha: 1.0);
+                border-color: $green;
+            }
+        }
+
+        &.purple {
+            color: $primary-purple;
+            border-color: $primary-purple;
+            background-color: change-color($primary-purple, $alpha: 0.15);
+        }
+    }
+
+    &.btn-key-number {
+        max-width: 90px;
+        background-color: $primary;
+        border: solid 1.8px $primary;
+        color: $white;
+        font-size: $title-26;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: $bold-font;
+        border-radius: 8px;
+
+        &:hover,
+        :focus {
+            color: $white;
+            background-color: $primary-darker;
+            border-color: $primary-darker;
+        }
+    }
+
+    &.btn-secondary-action {
+        max-width: 90px;
+        border-radius: 8px;
+        font-size: $body-16;
+        border: solid;
+        border-width: 1.8px;
+
+        &.with-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: $body-12;
+
+            i {
+                font-size: $title-26;
+            }
+            &.black{
+                font-size: $body-16;
+                font-weight: $semibold-font;
+                min-width: 90px;
+            }
+        }
+
+        &.primary-blue {
+            border-color: $primary;
+            color: $primary;
+            background-color: change-color($primary, $alpha: 0.15);
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($primary, $alpha: 1.0);
+                border-color: $primary;
+            }
+        }
+
+        &.yellow {
+            border-color: $yellow;
+            color: $yellow;
+            background-color: change-color($yellow, $alpha: 0.15);
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($yellow, $alpha: 1.0);
+                border-color: $yellow;
+            }
+        }
+
+        &.green {
+            border-color: $green;
+            color: $green;
+            background-color: change-color($green, $alpha: 0.15);
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($green, $alpha: 1.0);
+                border-color: $green;
+            }
+        }
+
+        &.purple {
+            color: $primary-purple;
+            border-color: $primary-purple;
+            background-color: change-color($primary-purple, $alpha: 0.15);
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($primary-purple, $alpha: 1.0);
+                border-color: $primary-purple;
+            }
+        }
+
+        &.black {
+            color: $black;
+            border-color: $black;
+            background-color: $white;
+
+            &:hover,
+            :focus {
+                color: $white;
+                background-color: change-color($black, $alpha: 1.0);
+                border-color: $black;
+            }
+        }
+    }
+
+    
+}
+
+
+
+/* /Button styles*/

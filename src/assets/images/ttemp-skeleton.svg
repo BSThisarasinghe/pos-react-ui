@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="492px" height="208px" viewBox="0 0 492 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="UI-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Action-\-item-adding-update" transform="translate(-522.000000, -80.000000)" fill="#E0E3E7">
+            <g id="Group-2" transform="translate(522.000000, 80.000000)">
+                <rect id="Rectangle" x="0" y="0" width="76" height="17" rx="5"></rect>
+                <rect id="Rectangle-Copy" x="416" y="0" width="76" height="17" rx="5"></rect>
+                <g id="Group" transform="translate(0.000000, 27.000000)">
+                    <rect id="Rectangle-Copy-2" x="0" y="1" width="241" height="55" rx="8"></rect>
+                    <rect id="Rectangle-Copy-3" x="251" y="0" width="241" height="55" rx="8"></rect>
+                </g>
+                <g id="Group-Copy" transform="translate(0.000000, 93.000000)">
+                    <rect id="Rectangle-Copy-2" x="0" y="1" width="241" height="55" rx="8"></rect>
+                    <rect id="Rectangle-Copy-3" x="251" y="0" width="241" height="55" rx="8"></rect>
+                </g>
+                <rect id="Rectangle-Copy-6" x="0" y="167" width="76" height="41" rx="8"></rect>
+                <rect id="Rectangle-Copy-7" x="416" y="167" width="76" height="41" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+/*Theme file 365 POS system*/
+
+/*font*/
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('/public/assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url('/public/assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+//theme colors
+$primary: #29ABE2;
+$primary-darker: #2499CA;
+$link-blue: #0D6EFD;
+$primary-purple: #4F00FF;
+$primary-purple-darker: #4600E5;
+$green: #5EC086;
+$green-darker: #54AC78;
+$red: #EC2127;
+$red-darker: #D31D23;
+$orange: #FD8124;
+$yellow: #FDC124;
+//gray-levels
+$light-grey:#F9FAFB;
+$line-grey:#E0E3E7;
+$grey-50:#F2F3F5;
+$grey-300:#B3BBC4;
+$grey-500:#939EAA;
+$grey-700:#808C99;
+$grey-900:#64707F;
+$black: #000000;
+$white: #ffffff;
+$white-gradiant: (background-image: linear-gradient(to bottom, #FEFEFE 0%, #FAFBFC 100%));
+
+//font-weight
+$regular-font: 400;
+$medium-font: 500;
+$semibold-font: 600;
+$bold-font: 700;
+
+//font-sizes
+$title-36: 36px;
+$title-35: 35px;
+$title-28: 28px;
+$title-26: 26px;
+$title-24: 24px;
+$title-20: 20px;
+$title-21: 21px;
+$title-18: 18px;
+$body-16: 16px;
+$body-15: 15px;
+$body-14: 14px;
+$body-13: 13px;
+$body-12: 12px;
+
+
+
+// brakepoint
+$breackpoints: (xs: 0,
+  xsm: 414px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xlg: 1400px,
+  xxlg: 1800px,
+  xxxlg: 2200px,
+) !default;
+
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: $regular-font;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  color: $link-blue;
+  font-weight: $semibold-font;
+  font-size: $body-16;
+  text-decoration: none;
+}

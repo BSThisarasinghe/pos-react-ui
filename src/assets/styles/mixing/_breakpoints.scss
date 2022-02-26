@@ -1,0 +1,16 @@
+@mixin respond-to($breackpoint) {
+    @if (map-has-key($breackpoints, $breackpoint)) {
+        @media (min-width:#{map_get($breackpoints,$breackpoint)}) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-to-up($breackpoint) {
+    @if (map-has-key($breackpoints, $breackpoint)) {
+        @media (max-width:#{map_get($breackpoints,$breackpoint) - 1}) {
+            @content;
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+/*payment feedback*/
+.payment-feedback__wrapper {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    .payment-feedback {
+        &.status {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .symbol {
+                display: flex;
+
+                i {
+                    font-size: 100px;
+                }
+
+                margin-bottom: 20px;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            h3 {
+                font-size: $title-28;
+                font-weight: $semibold-font;
+                margin: 0 0 15px 0;
+            }
+            h5{
+                font-size: $body-16;
+                font-weight: $semibold-font;
+                margin: 0;
+            }
+        }
+        .bottom-btn__wrapper{
+            margin-top: 200px;
+        }
+    }
+
+}
+
+/*/ payment feedback*/

@@ -1,0 +1,21 @@
+
+/*PIN login*/
+
+.bg-primary{
+    background-color: $primary;
+
+    &.pin-login{
+        nav{
+            &.topNav{
+                display: flex;
+                padding: 10px;
+                border-bottom: none;
+                justify-content: space-between;
+        
+            }
+        }
+    }
+}
+
+
+/*/ PIN login*/

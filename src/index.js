@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import 'react-simple-keyboard/build/css/index.css';
+// import 'antd/dist/antd.css';
+// import './index.css';
+import './assets/styles/main.css';
 
 ReactDOM.render(
   <React.StrictMode>

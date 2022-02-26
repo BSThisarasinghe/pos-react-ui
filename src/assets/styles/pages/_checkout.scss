@@ -1,0 +1,122 @@
+
+
+/*Checkout*/
+
+.main-checkout__wrapper{
+    display: flex;
+    .left__wrapper{
+        
+        width: 50%;
+        .left-topNav__wrapper{
+            .left-topNav{
+                background-color: $primary;
+                color: $white;
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    max-height: 25px;
+                }
+                h4{
+                    margin: 0;
+                    font-size: $title-18;
+                    font-weight: $semibold-font;
+                }
+                .date-time__wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    h4{
+                        margin: 0 0 5px 0;
+                        font-size: $body-15;
+                        font-weight: $semibold-font;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: $body-14;
+                        font-weight: $regular-font;
+                    }
+                }
+            }
+        }
+        .left-content__wrapper{
+            height: calc(100vh - (61px + 61px));
+            background-color: $light-grey;
+            padding: 5px 16px;
+            .left-content-top__wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 12px;
+                h4{
+                    &.customerCode{
+                        font-size: $title-18;
+                        font-weight: $semibold-font;
+                        margin: 0;
+
+                    }
+                }
+            }
+        }
+    }
+    .right__wrapper{
+        width: 50%;
+    }
+}
+
+.single-selection-links__wrapper{
+    .selection-link-item{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        font-size: $body-16;
+        font-weight: $bold-font;
+        padding: 20px;
+        background-color: $light-grey;
+        border: solid 1.8px $line-grey;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        h5{
+            margin: 0;
+            font-size: $body-16;
+            &:first-child{
+                font-weight: $semibold-font;
+                color: $black;
+            }
+            &:last-child{
+                font-weight: $bold-font;
+                color: $primary;
+            }
+        }
+        &:hover,:focus{
+            background-color: change-color($primary, $alpha: 0.45);
+            border: solid 1.8px $line-grey;
+     
+        }
+        .active {
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='30px' height='30px' viewBox='0 0 30 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M728.4,192 C728.4,199.9529 721.9529,206.4 714,206.4 C706.0471,206.4 699.6,199.9529 699.6,192 C699.6,184.0471 706.0471,177.6 714,177.6 C721.9529,177.6 728.4,184.0471 728.4,192 Z M721.254,186.546 C720.994208,186.287115 720.640266,186.145072 720.273582,186.152541 C719.906897,186.160011 719.559034,186.31635 719.31,186.5856 L713.0586,194.5506 L709.2912,190.7814 C708.759282,190.285754 707.930383,190.300379 707.416281,190.814481 C706.902179,191.328583 706.887554,192.157482 707.3832,192.6894 L712.146,197.454 C712.405244,197.712772 712.758512,197.855092 713.124742,197.848304 C713.490973,197.841516 713.838723,197.686202 714.0882,197.418 L721.2738,188.436 C721.783376,187.906174 721.775375,187.066025 721.2558,186.546 L721.254,186.546 Z' id='path-e4j6ovuk3u-1'%3E%3C/path%3E%3C/defs%3E%3Cg id='UI-design' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-699.000000, -177.000000)'%3E%3Cmask id='mask-e4j6ovuk3u-2' fill='white'%3E%3Cuse xlink:href='%23path-e4j6ovuk3u-1'%3E%3C/use%3E%3C/mask%3E%3Cuse id='Mask' fill='%235EC086' fill-rule='nonzero' xlink:href='%23path-e4j6ovuk3u-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-size: 21px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 23px;
+            width: 23px;
+            border-radius: 50%;
+            padding: 3px;
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            z-index: 999;
+            background-color: $white;
+        }
+
+        &.active {
+            border-color: $primary;
+            color: $primary;
+            background-color: change-color($primary, $alpha: 0.2);
+            transition: 0.4s;
+        }
+    }
+}
+/* / Checkout*/
