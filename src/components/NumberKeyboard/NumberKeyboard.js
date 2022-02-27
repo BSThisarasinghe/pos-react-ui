@@ -6,7 +6,7 @@ const NumberKeyboard = (props) => {
     return (
         <Fragment>
             {props.keyboardType === 'default' ? <div className="num-keyboard__wrapper">
-                <div className="keyboard__wrapper keyboard-adding__wrapper keyboard-default__wrapper">
+                <div className={"keyboard__wrapper keyboard-default__wrapper " + (props.screen === 'payment' ? 'keyboard-checkout__wrapper' : 'keyboard-adding__wrapper')}>
                     <div className="keyboard-item-adding">
                         <button id="btn-plus" className="btn btn-plus btn-key-function green" onClick={() => props.onClickDefaultCalButton('+')}>+</button>
                         <button id="btn-done" className="btn btn-done btn-key-function primary-blue" onClick={() => props.onClickDefaultCalButton('Done')}>DONE</button>
@@ -38,6 +38,20 @@ const NumberKeyboard = (props) => {
                                 <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z" />
                             </svg>
                         </button>
+                        {props.screen === 'payment' && <>
+                            <button id="btn-sumprice1" className="btn btn-sumprice-1 btn-secondary-action  purple">
+                                Rs. 525
+                            </button>
+                            <button id="btn-sumprice2" className="btn btn-sumprice-2 btn-secondary-action  purple">
+                                Rs. 500
+                            </button>
+                            <button id="btn-sumprice3" className="btn btn-sumprice-3 btn-secondary-action  purple">
+                                Rs. 1000
+                            </button>
+                            <button id="btn-sumprice4" className="btn btn-sumprice-4 btn-secondary-action  purple">
+                                Rs. 5000
+                            </button>
+                        </>}
                     </div>
                 </div>
             </div> : <div className="keyboard__wrapper keyboard-adding__wrapper">

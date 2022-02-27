@@ -6,3 +6,5 @@ export * from './SearchOptions/SearchOptions';
 export * from './Cart/Cart';
 export * from './CategoryList/CategoryList';
 export * from './BadgeSelector/BadgeSelector';
+export * from './PaymentHeader/PaymentHeader';
+export * from './PaymentFooter/PaymentFooter';

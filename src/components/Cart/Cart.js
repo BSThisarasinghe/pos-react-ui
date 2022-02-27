@@ -12,6 +12,7 @@ const Cart = (props) => {
                 itemList={props.itemList}
                 batchList={props.batchList}
                 itemcount={props.itemcount}
+                onClickPay={props.onClickPay}
             />
         </Fragment>
     );

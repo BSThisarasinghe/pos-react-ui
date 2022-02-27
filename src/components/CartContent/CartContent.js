@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { Route, withRouter, Switch } from "react-router-dom";
 
 const CartContent = (props) => {
@@ -30,8 +31,8 @@ const CartContent = (props) => {
                             {Array.isArray(props.itemList) && props.itemList.length > 0 && props.itemList.map((item, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td>{item.name}</td>
-                                        <td>{item.item_id}</td>
+                                        <td>#{item.item_id} {item.name}</td>
+                                        <td>{item.price}</td>
                                         <td>{item.itemcount}</td>
                                         <td className="right-align">{parseFloat(item.price) * parseFloat(item.itemcount)}</td>
                                     </tr>
@@ -73,7 +74,11 @@ const CartContent = (props) => {
                 </div>
             </div>
             <div className="bottom-pay-trigger__wrapper">
-                <button className="btn btn-lg btn-green">Pay</button>
+                <button
+                    className="btn btn-lg btn-green"
+                    onClick={props.onClickPay}
+                >Pay
+                </button>
             </div>
         </div>
     );
