@@ -8,6 +8,7 @@ const SimpleKeyboard = ({ keyboardRef, inputName, layoutName, onChangeAll, onKey
     return (
         <React.Fragment>
             <Keyboard
+                
                 keyboardRef={keyboardRef}
                 inputName={inputName}
                 layoutName={layoutName}
@@ -60,28 +61,26 @@ const SimpleKeyboard = ({ keyboardRef, inputName, layoutName, onChangeAll, onKey
             //         "{default} {space} {altright} {downkeyboard}"
             //     ]
             // }}
-            // display={{
-            //     "{alt}": ".?123",
-            //     "{smileys}": "\uD83D\uDE03",
-            //     "{shift}": "⇧",
-            //     "{shiftactivated}": "⇧",
-            //     "{enter}": "return",
-            //     "{bksp}": "⌫",
-            //     "{altright}": ".?123",
-            //     "{downkeyboard}": "🞃",
-            //     "{space}": " ",
-            //     "{default}": "ABC",
-            //     "{back}": "⇦"
-            // }}
+            display={{
+                "{alt}": ".?123",
+                // "{smileys}": "\uD83D\uDE03",
+                "{shift}": "⇧",
+                "{shiftactivated}": "⇧",
+                "{enter}":" &#xF131; enter",
+                "{bksp}": "⌫ delete",
+                "{altright}": ".?123",
+                "{downkeyboard}": "⇩ hide",
+                "{space}": " ",
+                "{default}": "ABC",
+                "{back}": "⇦"
+            }}
             buttonTheme={[
+              
               {
-                class: "special__keys",
-                buttons: "{bksp} {enter} {alt} {smileys} {downkeyboard}"
+                class: "key-function-keys",
+                buttons: "{bksp} {enter} {alt} {smileys} {downkeyboard} {shift} {lock} {tab} "
               },
-              {
-                class: "space__btn",
-                buttons: "{space}"
-              }
+             
             ]}
             />
         </React.Fragment>
