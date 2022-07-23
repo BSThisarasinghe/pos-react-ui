@@ -66,7 +66,7 @@ const SimpleKeyboard = ({ keyboardRef, inputName, layoutName, onChangeAll, onKey
                 // "{smileys}": "\uD83D\uDE03",
                 "{shift}": "⇧",
                 "{shiftactivated}": "⇧",
-                "{enter}":" &#xF131; enter",
+                "{enter}":" ⇦ enter",
                 "{bksp}": "⌫ delete",
                 "{altright}": ".?123",
                 "{downkeyboard}": "⇩ hide",
