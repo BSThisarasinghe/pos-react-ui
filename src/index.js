@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import 'react-simple-keyboard/build/css/index.css';
 // import 'antd/dist/antd.css';
 // import './index.css';
-import './assets/styles/main.css';
+import './assets/styles/main.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
