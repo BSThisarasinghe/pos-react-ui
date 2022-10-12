@@ -64,7 +64,7 @@ const SimpleKeyboard = ({ keyboardRef, inputName, layoutName, onChangeAll, onKey
             display={{
                 "{alt}": ".?123",
                 // "{smileys}": "\uD83D\uDE03",
-                "{shift}": "⇧",
+                "{shift}": "⇧ shift",
                 "{shiftactivated}": "⇧",
                 "{enter}":" ⇦ enter",
                 "{bksp}": "⌫ delete",
@@ -72,7 +72,11 @@ const SimpleKeyboard = ({ keyboardRef, inputName, layoutName, onChangeAll, onKey
                 "{downkeyboard}": "⇩ hide",
                 "{space}": " ",
                 "{default}": "ABC",
-                "{back}": "⇦"
+                "{back}": "⇦",
+                "{tab}": "tab",
+                "{lock}": "caps lock",
+                "{space}": "space"
+
             }}
             buttonTheme={[
               
